@@ -23,6 +23,7 @@
             <li><a href="all_towary.php">Wszystkie towary</a></li>
         </ul>
     </nav>
+    <h1>Wszystkie towary</h1>
     <div class="all_towary">
         <?php 
         $all_records = $conn->query("SELECT tabelanr34.ID,tabelanr34.CENA,tabelanr34.NAZWA,tabelanr34.KATEGORIA FROM tabelanr34;");
@@ -34,9 +35,10 @@
         <h1>Suma Cen</h1>
         <div class="all_towary">
             <?php
-              $sciezka_do_pliku = 'tabelanr34';
-              $suma = array_sum(array_map('trim', file($sciezka_do_pliku)));
-              echo "Suma cen wynosi: $suma";
+              $sum_records = $conn->query("SELECT tabelanr34.CENA FROM tabelanr34");
+              while(list($CENA)=mysqli_fetch_row($sum_records)){
+                echo("<li><b>$CENA</b></li>");
+             }
             ?>
         </div>
         
