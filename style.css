@@ -1,0 +1,40 @@
+html, body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: rgb(221, 246, 252);
+ }
+ .towary_z_kategori_nr1{
+    width: 600px;
+    height: auto;
+    border: solid 10px rgb(72, 8, 72);
+    border-radius: 25px;
+    margin: auto;
+    padding: 20px;
+ }
+ .towary_z_kategori_nr4{
+    width: 600px;
+    height: auto;
+    border: solid 10px rgb(185, 240, 74);
+    border-radius: 25px;
+    margin: auto;
+    padding: 20px;
+ }
+ .all_towary{
+    width: 600px;
+    height: auto;
+    border: solid 10px rgb(25, 135, 179);
+    border-radius: 25px;
+    margin: auto;
+    padding: 20px;
+ }
+ .counter{
+   text-align: center;
+   color: skyblue;
+ }
+ h1{
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+ }
+ 
